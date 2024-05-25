@@ -60,5 +60,10 @@ body('description').exists().isString(),
 body('updateId').exists().isString(), 
 (req, res) => {});
 
+router.use((err,req,res,next)=> {
+  console.log(err)
+  res.status(500).json({message: 'in router handler'})
+})
+
 export default router;
 

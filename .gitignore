@@ -1,3 +1,26 @@
-node_modules
-# Keep environment variables out of version control
+# Node.js
+node_modules/
+
+# Build files
+dist/
+build/
+
+# Environment
 .env
+.env.local
+.env.*.local
+
+# TypeScript
+*.tsbuildinfo
+
+# Prisma
+prisma/.env
+prisma/.prisma/client
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

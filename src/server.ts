@@ -19,7 +19,7 @@ app.use((req,res,next) =>{
 
 app.get('/', (req, res, next) => {
   console.log('hello from express');
-  res.status(200).json({ message: 'hello' , client: 'vlad'});
+  res.status(200).json({ message: 'hello'});
 });
 
 app.use('/api',protect, router);
